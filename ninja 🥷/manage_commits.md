@@ -97,4 +97,8 @@ There's a large miss-understanding at the early stages of career's about how to 
 6. Control flow
   1. `gco o -b my_new_branch`
   2. `git cherry-pick x`
+<<<<<<< HEAD
   3. `ggpush`gg
+=======
+  3. `ggpush`
+>>>>>>> a4047fc (initial commit.)
