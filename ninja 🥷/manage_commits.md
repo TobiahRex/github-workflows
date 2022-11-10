@@ -81,24 +81,20 @@ There's a large miss-understanding at the early stages of career's about how to 
   4. `ggpush` if not already at origin, else `ggfl` to force push your changes to overwrite the origin commit history.
 
 ## Remove old commits but keep new commits
-5. `git cherry-pick <hash code>`
-  - Cherry-picking is super useful when we want to take a few commits from a working branch, and put them into a polished branch.
-  - ```
-    working branch
+1. `git cherry-pick <hash code>`
+    - Cherry-picking is super useful when we want to take a few commits from a working branch, and put them into a polished branch.
+    - ```
+        working branch
 
-    o----x----y----z----HEAD
-    ^    ^               ^   = keep
+        o----x----y----z----HEAD
+        ^    ^               ^   = keep
 
 
-    o----x----HEAD
+        o----x----HEAD
 
-    new branch
-    ```
-6. Control flow
-  1. `gco o -b my_new_branch`
-  2. `git cherry-pick x`
-<<<<<<< HEAD
-  3. `ggpush`gg
-=======
-  3. `ggpush`
->>>>>>> a4047fc (initial commit.)
+        new branch
+      ```
+2. Control flow
+    1. `gco o -b my_new_branch`
+    2. `git cherry-pick x`
+    3. `ggpush`
